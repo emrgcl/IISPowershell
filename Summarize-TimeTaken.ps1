@@ -16,6 +16,7 @@ Param(
 [Parameter(Mandatory=$True)]
 [string]$CsvFullPath
 )
+#Requires -Modules PoshRSJob
 Import-Module PoshRSJob -verbose:$False
 
 Function Slice-Time {
