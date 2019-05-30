@@ -18,7 +18,6 @@ Param(
 )
 Import-Module PoshRSJob -verbose:$False
 
-#$LogPath='C:\Users\emreg\Documents\customer\TURKCELLTFS\u_ex19052905\u_ex19052905.log'
 Function Slice-Time {
 [CmdLetBinding()]
 Param(
