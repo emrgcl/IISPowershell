@@ -2,7 +2,7 @@
 .Synopsis
    Summarizes TimeTaken from IIS logs for specified minute intervals
 .DESCRIPTION
-   Scripts gets the logs in the specified path summarizes all the logs.
+   Scripts gets the logs in the specified path summarizes all the logs. Script Requires PoshRSJob Module to be installed.
 .EXAMPLE
    .\summarize-TimeTaken -LogPath c:\IISLogs -IntervalMin 3 -CsvFullPath C:\temp\iis.csv -Verbose
 #>
@@ -32,19 +32,41 @@ $SlicedMin=[Math]::Truncate(($DateToSlice -as [DateTime]).Minute / $IntervalMin)
 }
 $ScriptStartTime=Get-Date
 
+
+
 # Get the logs 
 $logs=gci -Path $LogPath -File
 Write-Verbose "[$(Get-date -Format G)] Working on $($Logs.Count) log files."
 $starttime=Get-Date
 
 # Prepare a script block that will parse
-$ScriptBlock={$IISLog=get-content -Path ($_.FullName)
+$ScriptBlock={
+
+#declaring our log class
+
+class Log {
+[datetime]$RequestDate
+[string]$SourceIP
+[string]$MethodName
+[string]$URI
+[string]$Query
+[int]$Port
+[string]$UserName
+[string]$ClientIP
+[string]$UserAgent
+[string]$Referrer
+[int]$Status
+[string]$SubStatus
+[string]$Win32Status
+[string]$TimeTaken
+}
+$IISLog=get-content -Path ($_.FullName)
 $Results = $IISlog -match ".+POST\s"
 foreach ($Line in $Results) {
 
 $Log=$line -split "\s"
 #Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
-[PSCustomObject]@{
+[Log]@{
 RequestDate="$($Log[0]) $($Log[1])" -as [DateTime]
 SourceIP=$Log[2]
 MethodName = $Log[3]
