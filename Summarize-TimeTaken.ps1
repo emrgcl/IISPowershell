@@ -25,14 +25,13 @@ Param(
 [Parameter(Mandatory=$True)]
 [int]$IntervalMin,
 [Parameter(Mandatory=$True)]
-[string]$DateToSlice
+[DateTime]$DateToSlice
 )
-$SlicedMin=[Math]::Truncate(($DateToSlice -as [DateTime]).Minute / $IntervalMin) * $IntervalMin
-($DateToSlice -replace ":\d+:\d+",":$($SlicedMin):00") -as [DateTime]
+#determining which timeslot is $datetoslicein
+$SlicedMin=[Math]::Truncate(($DateToSlice).Minute / $IntervalMin) * $IntervalMin
+#creating a new dateobject with the determined timeslot above
+[datetime]::new(($DateToSlice.Year),($DateToSlice.Month),($DateToSlice.Day),($DateToSlice.Hour),$SlicedMin,0)
 }
-$ScriptStartTime=Get-Date
-
-
 
 # Get the logs 
 $logs=gci -Path $LogPath -File
