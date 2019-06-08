@@ -16,7 +16,10 @@ Param(
 [Parameter(Mandatory=$True)]
 [string]$CsvFullPath
 )
+
 #Requires -Modules PoshRSJob
+#setting script start time
+$ScriptStartTime=get-date
 Import-Module PoshRSJob -verbose:$False
 
 Function Slice-Time {
