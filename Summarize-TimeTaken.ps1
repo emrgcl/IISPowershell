@@ -38,7 +38,24 @@ $SlicedMin=[Math]::Truncate(($DateToSlice).Minute / $IntervalMin) * $IntervalMin
 
 # Get the logs 
 $logs=gci -Path $LogPath -File
+
 Write-Verbose "[$(Get-date -Format G)] Working on $($Logs.Count) log files."
+
+# Gettinf File Stats
+
+$filestats=foreach ($File in $files) {
+$nlines = 0;
+Get-Content -path $file.FullName -read 1000 | % { $nlines += $_.Length  } 
+[pscustomobject]@{
+Name = $File.FullName
+LineCount=$nlines
+SizeMB = [Math]::Round($File.Length / 1MB)
+}
+}
+$FileStats | ForEach-Object {Write-Verbose "[$(Get-date -Format G)] $($_.Name) has $($_.LineCount) nubmer of lines. File size is $($_.SizeMB) Mbs."}
+
+
+
 $starttime=Get-Date
 
 # Prepare a script block that will parse
@@ -63,7 +80,7 @@ class Log {
 [datetime]$TimeInterval
 }
 
-$IISLog=get-content -Path ($_.FullName)
+
 
 $StreamReader = New-object -TypeName System.IO.StreamReader -ArgumentList (Resolve-Path -Path $_.FullName -ErrorAction Stop).Path
 
