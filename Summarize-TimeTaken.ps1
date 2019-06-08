@@ -41,7 +41,7 @@ $logs=gci -Path $LogPath -File
 
 Write-Verbose "[$(Get-date -Format G)] Working on $($Logs.Count) log files."
 
-# Gettinf File Stats
+# Getting File Stats
 
 $filestats=foreach ($File in $files) {
 $nlines = 0;
