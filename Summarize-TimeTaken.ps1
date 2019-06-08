@@ -42,9 +42,8 @@ Write-Verbose "[$(Get-date -Format G)] Working on $($Logs.Count) log files."
 $starttime=Get-Date
 
 # Prepare a script block that will parse
-$ScriptBlock={
 
-#declaring our log class
+$ScriptBlock = {
 
 class Log {
 [datetime]$RequestDate
@@ -60,16 +59,25 @@ class Log {
 [int]$Status
 [string]$SubStatus
 [string]$Win32Status
-[string]$TimeTaken
+[int]$TimeTaken
+[datetime]$TimeInterval
 }
-$IISLog=get-content -Path ($_.FullName)
-$Results = $IISlog -match ".+POST\s"
-foreach ($Line in $Results) {
 
-$Log=$line -split "\s"
+$IISLog=get-content -Path ($_.FullName)
+
+$StreamReader = New-object -TypeName System.IO.StreamReader -ArgumentList (Resolve-Path -Path $_.FullName -ErrorAction Stop).Path
+
+while ($StreamReader.Peek() -ge 0)
+{
+
+$Line=$StreamReader.ReadLine()
+
+if ($Line -match ".+POST\s") {
+$Log=$Line -split "\s"
 #Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) cs(Referer) sc-status sc-substatus sc-win32-status time-taken
+$RequestDate="$($Log[0]) $($Log[1])" -as [DateTime]
 [Log]@{
-RequestDate="$($Log[0]) $($Log[1])" -as [DateTime]
+RequestDate= $RequestDate
 SourceIP=$Log[2]
 MethodName = $Log[3]
 URI = $Log[4]
@@ -83,22 +91,25 @@ Status=$Log[11]
 SubStatus=$Log[12]
 Win32Status=$Log[13]
 TimeTaken=$Log[14]
+TimeInterval=Slice-Time -IntervalMin $using:IntervalMin -DateToSlice $RequestDate
+}
 }
 
-} 
+}
+$StreamReader.Dispose()
 }
  
 Write-Verbose "[$(Get-date -Format G)] Parsing IIS logs started"
 
 # start running the script block multithreaded. Thread per Log file.
-$AllResults=$logs | Start-RSJob -Name {$_.FullName} -ScriptBlock $ScriptBlock -Verbose:$false| Wait-RSJob -Verbose:$false| Receive-RSJob -Verbose:$false
+$AllResults=$logs | Start-RSJob -Name {$_.FullName} -ScriptBlock $ScriptBlock -FunctionsToImport Slice-Time -Verbose:$false| Wait-RSJob -Verbose:$false| Receive-RSJob -Verbose:$false
 
 Write-Verbose "[$(Get-date -Format G)] Parsing Duration is $((New-TimeSpan -Start $starttime -End (Get-Date)).TotalSeconds)"
 $starttime=Get-Date
 Write-Verbose "[$(Get-date -Format G)] Starting Slicing time"
 
 # Do timeslicing using Slice-Time function and group based on the sliced time intervals.
-$FilteredResult=$AllResults| ? Status -eq 200 | Select-Object SourceIP,URI,TimeTaken,@{Name="TimeInterval";Expression={Slice-Time -IntervalMin $IntervalMin -DateToSlice ($_.RequestDate)}} |Group-Object -Property URI,TimeInterval,SourceIP
+$FilteredResult=$AllResults| ? Status -eq 200 | Select-Object SourceIP,URI,TimeTaken,TimeInterval |Group-Object -Property URI,TimeInterval,SourceIP
 Write-Verbose "[$(Get-date -Format G)] Slicing Duration is $((New-TimeSpan -Start $starttime -End (Get-Date)).TotalSeconds)"
 $starttime=Get-Date
 Write-Verbose "[$(Get-date -Format G)] Starting Aggregation"
