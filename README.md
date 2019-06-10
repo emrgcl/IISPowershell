@@ -1,4 +1,4 @@
-# Powerashell Scripts for IIS Management and monitoring
+# Powershell Scripts for IIS Management and monitoring
 
 ## Summarize-TimeTaken
 Summarizes TimeTaken from IIS logs for specified minute intervals. 
