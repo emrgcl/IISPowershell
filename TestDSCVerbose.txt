@@ -1,0 +1,295 @@
+Perform operation 'Invoke CimMethod' with following parameters, ''methodName' = TestConfiguration,'className' = 
+MSFT_DSCLocalConfigurationManager,'namespaceName' = root/Microsoft/Windows/DesiredStateConfiguration'.
+An LCM method call arrived from computer OKIRAF1I02 with user sid S-1-5-21-1458978974-246840441-623647154-136484.
+[OKIRAF1I02]: LCM:  [ Start  Compare  ]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource0::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource0::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource0::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Server
+[OKIRAF1I02]:                            [[WindowsFeature]Resource0::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Server
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource0::[WindowsFeatureSet]BOA Application Roles] True in 1.3280 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource0::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource1::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource1::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource1::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-WebServer
+[OKIRAF1I02]:                            [[WindowsFeature]Resource1::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-WebServer
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource1::[WindowsFeatureSet]BOA Application Roles] True in 0.6250 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource1::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource2::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource2::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource2::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Common-Http
+[OKIRAF1I02]:                            [[WindowsFeature]Resource2::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Common-Http
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource2::[WindowsFeatureSet]BOA Application Roles] True in 0.5470 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource2::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource3::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource3::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource3::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Default-Doc
+[OKIRAF1I02]:                            [[WindowsFeature]Resource3::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Default-Doc
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource3::[WindowsFeatureSet]BOA Application Roles] True in 0.5620 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource3::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource4::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource4::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource4::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Dir-Browsing
+[OKIRAF1I02]:                            [[WindowsFeature]Resource4::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Dir-Browsing
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource4::[WindowsFeatureSet]BOA Application Roles] True in 0.5470 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource4::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource5::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource5::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource5::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Http-Errors
+[OKIRAF1I02]:                            [[WindowsFeature]Resource5::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Http-Errors
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource5::[WindowsFeatureSet]BOA Application Roles] True in 0.5780 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource5::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource6::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource6::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource6::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Static-Content
+[OKIRAF1I02]:                            [[WindowsFeature]Resource6::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Static-Content
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource6::[WindowsFeatureSet]BOA Application Roles] True in 0.5940 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource6::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource7::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource7::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource7::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Health
+[OKIRAF1I02]:                            [[WindowsFeature]Resource7::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Health
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource7::[WindowsFeatureSet]BOA Application Roles] True in 0.6100 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource7::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource8::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource8::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource8::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Http-Logging
+[OKIRAF1I02]:                            [[WindowsFeature]Resource8::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Http-Logging
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource8::[WindowsFeatureSet]BOA Application Roles] True in 0.5940 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource8::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource9::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource9::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource9::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Request-Monitor
+[OKIRAF1I02]:                            [[WindowsFeature]Resource9::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Request-Monitor
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource9::[WindowsFeatureSet]BOA Application Roles] True in 0.5620 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource9::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource10::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource10::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource10::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Http-Tracing
+[OKIRAF1I02]:                            [[WindowsFeature]Resource10::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Http-Tracing
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource10::[WindowsFeatureSet]BOA Application Roles] True in 0.5940 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource10::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource11::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource11::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource11::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Performance
+[OKIRAF1I02]:                            [[WindowsFeature]Resource11::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Performance
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource11::[WindowsFeatureSet]BOA Application Roles] True in 0.5630 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource11::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource12::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource12::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource12::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Stat-Compression
+[OKIRAF1I02]:                            [[WindowsFeature]Resource12::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Stat-Compression
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource12::[WindowsFeatureSet]BOA Application Roles] True in 0.5940 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource12::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource13::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource13::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource13::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Security
+[OKIRAF1I02]:                            [[WindowsFeature]Resource13::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Security
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource13::[WindowsFeatureSet]BOA Application Roles] True in 0.5620 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource13::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource14::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource14::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource14::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Filtering
+[OKIRAF1I02]:                            [[WindowsFeature]Resource14::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Filtering
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource14::[WindowsFeatureSet]BOA Application Roles] True in 0.5470 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource14::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource15::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource15::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource15::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Windows-Auth
+[OKIRAF1I02]:                            [[WindowsFeature]Resource15::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Windows-Auth
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource15::[WindowsFeatureSet]BOA Application Roles] True in 0.5940 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource15::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource16::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource16::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource16::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-App-Dev
+[OKIRAF1I02]:                            [[WindowsFeature]Resource16::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-App-Dev
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource16::[WindowsFeatureSet]BOA Application Roles] True in 0.6090 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource16::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource17::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource17::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource17::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Net-Ext45
+[OKIRAF1I02]:                            [[WindowsFeature]Resource17::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Net-Ext45
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource17::[WindowsFeatureSet]BOA Application Roles] True in 0.5810 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource17::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource18::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource18::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource18::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Asp-Net45
+[OKIRAF1I02]:                            [[WindowsFeature]Resource18::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Asp-Net45
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource18::[WindowsFeatureSet]BOA Application Roles] True in 0.5790 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource18::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource19::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource19::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource19::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-ISAPI-Ext
+[OKIRAF1I02]:                            [[WindowsFeature]Resource19::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-ISAPI-Ext
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource19::[WindowsFeatureSet]BOA Application Roles] True in 0.5000 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource19::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource20::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource20::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource20::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-ISAPI-Filter
+[OKIRAF1I02]:                            [[WindowsFeature]Resource20::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-ISAPI-Filter
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource20::[WindowsFeatureSet]BOA Application Roles] True in 0.5930 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource20::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource21::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource21::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource21::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Mgmt-Tools
+[OKIRAF1I02]:                            [[WindowsFeature]Resource21::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Mgmt-Tools
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource21::[WindowsFeatureSet]BOA Application Roles] True in 0.6100 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource21::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource22::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource22::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource22::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Mgmt-Console
+[OKIRAF1I02]:                            [[WindowsFeature]Resource22::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Mgmt-Console
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource22::[WindowsFeatureSet]BOA Application Roles] True in 0.5620 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource22::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource23::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource23::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource23::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Mgmt-Compat
+[OKIRAF1I02]:                            [[WindowsFeature]Resource23::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Mgmt-Compat
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource23::[WindowsFeatureSet]BOA Application Roles] True in 0.5780 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource23::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource24::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource24::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource24::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: Web-Metabase
+[OKIRAF1I02]:                            [[WindowsFeature]Resource24::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: Web-Metabase
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource24::[WindowsFeatureSet]BOA Application Roles] True in 0.5630 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource24::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource25::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource25::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource25::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: NET-WCF-Services45
+[OKIRAF1I02]:                            [[WindowsFeature]Resource25::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: NET-WCF-Services45
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource25::[WindowsFeatureSet]BOA Application Roles] True in 0.5470 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource25::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource26::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource26::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource26::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: NET-WCF-HTTP-Activation45
+[OKIRAF1I02]:                            [[WindowsFeature]Resource26::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: NET-WCF-HTTP-Activation45
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource26::[WindowsFeatureSet]BOA Application Roles] True in 0.5620 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource26::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource27::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource27::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource27::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: NET-WCF-Pipe-Activation45
+[OKIRAF1I02]:                            [[WindowsFeature]Resource27::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: NET-WCF-Pipe-Activation45
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource27::[WindowsFeatureSet]BOA Application Roles] True in 0.5780 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource27::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource28::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource28::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource28::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: NET-WCF-TCP-Activation45
+[OKIRAF1I02]:                            [[WindowsFeature]Resource28::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: NET-WCF-TCP-Activation45
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource28::[WindowsFeatureSet]BOA Application Roles] True in 0.5320 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource28::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[WindowsFeature]Resource29::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[WindowsFeature]Resource29::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]:                            [[WindowsFeature]Resource29::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' started: NET-WCF-TCP-PortSharing45
+[OKIRAF1I02]:                            [[WindowsFeature]Resource29::[WindowsFeatureSet]BOA Application Roles] The operation 
+'Get-WindowsFeature' succeeded: NET-WCF-TCP-PortSharing45
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[WindowsFeature]Resource29::[WindowsFeatureSet]BOA Application Roles] True in 0.4840 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[WindowsFeature]Resource29::[WindowsFeatureSet]BOA Application Roles]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[File]BOA Master Source]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[File]BOA Master Source]
+[OKIRAF1I02]:                            [[File]BOA Master Source] The destination object was found and no action is required.
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[File]BOA Master Source] True in 0.0310 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[File]BOA Master Source]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[File]Web Certificate]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[File]Web Certificate]
+[OKIRAF1I02]:                            [[File]Web Certificate] The destination object was found and no action is required.
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[File]Web Certificate] True in 0.0160 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[File]Web Certificate]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[Archive]Copy from Master]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[Archive]Copy from Master]
+[OKIRAF1I02]:                            [[Archive]Copy from Master] The destination file d:\WebServices\BOA.Integration.WCFService\Web.config 
+exists but its checksum did not match the origin file
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[Archive]Copy from Master] False in 1.2660 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[Archive]Copy from Master]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[PfxImport]Web Site certificate]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[PfxImport]Web Site certificate]
+[OKIRAF1I02]:                            [[PfxImport]Web Site certificate] Get-TargetResource: Getting Pfx existence 
+'28205342C448D665BF58FC7FCC3329A5F5B1D307' in 'Cert:\LocalMachine\My'. (PI0001)
+[OKIRAF1I02]:                            [[PfxImport]Web Site certificate] Get-TargetResource: Certificate 
+'28205342C448D665BF58FC7FCC3329A5F5B1D307' does not exist in 'Cert:\LocalMachine\My'. (PI0004)
+[OKIRAF1I02]:                            [[PfxImport]Web Site certificate] Test-TargetResource: Testing Pfx 
+'28205342C448D665BF58FC7FCC3329A5F5B1D307' existence in 'Cert:\LocalMachine\My'. (PI0005)
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[PfxImport]Web Site certificate] False in 2.5940 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[PfxImport]Web Site certificate]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[xWebAppPool]BOA.Integration.WCFService]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[xWebAppPool]BOA.Integration.WCFService]
+[OKIRAF1I02]:                            [[xWebAppPool]BOA.Integration.WCFService] Application pool "BOA.Integration.WCFService" was found.
+[OKIRAF1I02]:                            [[xWebAppPool]BOA.Integration.WCFService] The target resource is already in the desired state. No 
+action is required.
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[xWebAppPool]BOA.Integration.WCFService] True in 0.8750 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[xWebAppPool]BOA.Integration.WCFService]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[xWebsite]Remove Default Web Site]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[xWebsite]Remove Default Web Site]
+[OKIRAF1I02]:                            [[xWebsite]Remove Default Web Site] The target resource is already in the desired state. No action is 
+required.
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[xWebsite]Remove Default Web Site] True in 0.1560 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[xWebsite]Remove Default Web Site]
+[OKIRAF1I02]: LCM:  [ Start  Resource ]  [[xWebsite]BOA.Integration.WCFService]
+[OKIRAF1I02]: LCM:  [ Start  Test     ]  [[xWebsite]BOA.Integration.WCFService]
+[OKIRAF1I02]:                            [[xWebsite]BOA.Integration.WCFService] Bindings for website "BOA.Integration.WCFService" do not match 
+the desired state.
+[OKIRAF1I02]:                            [[xWebsite]BOA.Integration.WCFService] The target resource is not in the desired state.
+[OKIRAF1I02]: LCM:  [ End    Test     ]  [[xWebsite]BOA.Integration.WCFService] False in 0.5940 seconds.
+[OKIRAF1I02]: LCM:  [ End    Resource ]  [[xWebsite]BOA.Integration.WCFService]
+[OKIRAF1I02]: LCM:  [ End    Compare  ]     Completed processing compare operation. The operation returned False.
+[OKIRAF1I02]: LCM:  [ End    Compare  ]    in  25.1770 seconds.
+Operation 'Invoke CimMethod' complete.
+Time taken for configuration job to complete is 25.492 seconds
+ 
